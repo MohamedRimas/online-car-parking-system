@@ -1,0 +1,286 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>Payment Form</title>
+    <link href="style1.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.7/css/all.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/style.css">
+	<style>
+	    .container,
+        .bttn1 {
+            background: none;
+            padding: 6px 15px;
+            font-size: 15px;
+            font-family: "montserrat";
+            color: #3498db;
+            margin: 5px;
+            transition: 0.4s;
+            cursor: pointer;
+            position: relative;
+            overflow: hidden;
+        }
+        
+        .bttn1:hover {
+            color: #fff;
+        }
+        
+        .bttn1::before {
+            content: "";
+            position: absolute;
+            left: 0px;
+            width: 100%;
+            height: 0%;
+            background: #3498db;
+            z-index: -1;
+            transition: 0.4s;
+        }
+        
+        .bttn1:hover::before {
+            height: 250%;
+        }
+        
+        .bttn1::before {
+            top: 0;
+            border-radius: 0 0 60px 60px;
+        }
+.p5 {
+    color: firebrick;
+    font-size:8px;
+	position: relative;
+	left: 0px;
+    
+}
+	</style>
+
+  </head>
+  <body>
+ <header>
+
+        <div class="container">
+
+            <div class="logo-container">
+                <img src="image/IMG.jpeg" width="100" height="50" class="left"> &nbsp;
+                <h3 class="logo">Ez-<span>Park</span></h3>
+            </div>
+
+            <div class="nav-btn">
+                <div class="nav-links">
+                    <ul>
+                        <li class="nav-link" style="--i: .6s">
+                            <a href="AHome.html"><u>HOME</u></a>
+                        </li>
+
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="Help.html"><u>HELP</u></a>
+                        </li>
+                        <li class="nav-link" style="--i: 1.35s">
+                            <a href="#"><u>ABOUT</u></a>
+                        </li>
+
+                    </ul>
+                </div>
+
+
+                <div class="log-sign" style="--i: 1.8s">
+                    <a href="login.php" class="btn transparent">Log in</a>
+                    <a href="singup.php" class="btn solid">Sign up</a>
+                    <img src="image/logo.png" width="60" height="60" class="right"> &nbsp;&nbsp;&nbsp;&nbsp;
+                </div>
+            </div>
+
+</header>
+
+<br><br><br>
+  
+  <div class="row">
+  <div class="col-75">
+    
+    <div class="ccontainer">
+      <form method = "POST" action="montly.html">
+
+        <div class="row">
+          <div class="col-50">
+            <h2>About Monthly Subscription</h2>
+            
+          
+            <div class="">
+            <p0>Monthly Subcription allows users access to reserve locations for monthly time periods at any hour of the day.</p0> 
+            <br><br>
+
+            <p1><b>Important</b></p1> 
+			<br>
+            <p>1. Your monthly parking begins once you have made the necessary payment and registered for the subscription. The parking pass issued on the day of registration will be continued for 30 days before expiring. If you wish to continue the subscription, please make sure to renew your parking pass monthly.</p>
+			<br>
+           <p> *Once subscribed for the monthly payment system, the subscription cannot be cancelled until the nearest renewal date.*</p>
+			<br>
+            <p>2. The monthly fee will be calculated with the selected parking hours of the month and the vehicle type accordingly. Please note that the fee varies considerably according to your vehicle type.</p>
+			<br>
+            <p>3.A service fee of 5% will be added to your monthly bill for all services done by the website. </p>
+			<br>
+            <p>4.It is recommended that you purchase the subscription at least 3-4 business days before the starting date, to allow sufficient time for the facility to process your monthly subscription.</p>
+			<br>
+            <p>5.Please contact our support service center for further inquiries.</p>
+			<br>
+
+          
+            
+          
+           </div>
+           </div>
+           
+          </div>
+
+          <div class="col-50">
+            <br>
+            <label1 for="cards"><b>Accepted Payment Cards</b></label1>
+            
+            <div class="int">
+              <br>
+              
+              <label for="c1"><span><i class="fa fa-cc-visa" style="color:blue; "></i> Visa</span></label>
+             
+              <label for="c2"><span><i class="fa fa-cc-mastercard" style="color:red;"></i> Mastercard</span></label>
+              
+              <label for="c3"><span><i class="fa fa-cc-paypal" style="color:navy;"></i> Paypal</span></label>
+              
+              <label for="c3"><span><i class="fa fa-cc-discover" style="color:orange;"></i> Discover</span></label>
+              
+            </div>
+            <br>
+            <br>
+            
+            
+
+            
+            
+            <label1 for="Period"><b>Reservation Period</b></label1>
+            
+            
+  
+          </div>
+           
+    
+     
+
+    
+  
+          
+          <div class="container2">
+            
+
+
+
+          <p>Starting Date
+          <input type="date" name="start" required> End Date
+          <input type="date" name="end" required></p>
+          <br>
+          <br>Starting Time
+          <input type="time"name="starttime" required> 
+          Ending Time
+          <input type="time" name="endime" required>
+      
+      
+      
+      
+      <br>
+      <br>
+      <br>
+	 
+	  
+          
+          <input class="btn2" type="submit" value="Continue">
+          </form>
+		  
+          <br>
+          <br>
+
+       
+
+          
+            
+
+        </div>
+       
+       
+        
+    </div>
+    
+  
+
+ </div>
+      
+     
+</div>
+<footer class="footer">
+
+        <div class="container0">
+            <div class="row0">
+                <div class="footer-col">
+                    <h4>GET US ON</h4>
+                    <ul>
+                        <a href="https://play.google.com/store/apps">
+                            <img src="image/play.png" width="150" height="60" class="left"></a> <br>
+
+                        <a href="https://www.apple.com/app-store/">
+                            <img src="image/apps.png" width="150" height="60" class="left"></a><br>
+                        <div class="p5">
+                            <p>Ezpark.2021.All Right Reserved</p>
+                        </div>
+
+
+                    </ul>
+                </div>
+
+                <div class="footer-col">
+                    <h4>Quick-links</h4>
+                    <ul>
+                        <li><a href="AHome.html"><U>HOME</U></a></li>
+                        <li><a href="Contact Us.html"><U>CONTACT US</U></a></li>
+                        <li><a href="#"><U>ABOUT</U></a></li><br>
+
+                </div>
+
+
+                <div class="footer-col">
+                    <h4>follow-us</h4>
+                    <div class="social-links">
+                        <a href="https://www.facebook.com/login.php"><i class="fab fa-facebook-f"></i></a>
+                        <a href="https://accounts.google.com/login?service=mail&lp=1
+                        "><i class="fab fa-google"></i></a>
+                        <a href="https://www.instagram.com/accounts/login"><i class="fab fa-instagram"></i></a>
+
+
+                    </div>
+
+                </div>
+                <div class="footer-col">
+
+                    <div class="social-links"><br>
+                        <img src="image/IMG.jpeg" width="100" height="50" class="left"> <br> <br><br><br>
+                        <a href="https://sdg2.mastercard.com">
+                            <img src="image/card.png" width="180" height="50" class="left"></a>
+
+                    </div>
+
+
+                </div>
+                <div class="arrow">
+                    <a href="index.html"><img src="image/arrow.png"></a>
+                </div>
+            </div>
+
+
+
+
+
+
+    </footer>		
+
+  </body>
+</html>
